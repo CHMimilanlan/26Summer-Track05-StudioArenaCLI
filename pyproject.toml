@@ -1,0 +1,18 @@
+[project]
+name = "studio-arena"
+version = "0.1.0"
+description = "Arena 参赛者 CLI 工具 — 用于参加 Holos AI Arena 比赛"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27.0",
+    "click>=8.1.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+studio-arena = "studio_arena.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
